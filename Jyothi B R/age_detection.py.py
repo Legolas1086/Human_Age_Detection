@@ -1,14 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 28 09:28:40 2020
-
-@author: SATHISH B R
-"""
 
 import cv2
 import face_recognition
 
-image_to_detect=cv2.imread('images/testing/trump-modi.jpg')
+image_to_detect=cv2.imread('images/testing/dhoni-shushanth.jpg')
 
 all_face_locations=face_recognition.face_locations(image_to_detect,model='hog')
 print('there are {} no of faces in this image'.format(len(all_face_locations)))
