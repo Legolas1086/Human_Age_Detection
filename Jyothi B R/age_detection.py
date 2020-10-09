@@ -2,7 +2,7 @@
 import cv2
 import face_recognition
 
-image_to_detect=cv2.imread('images/testing/dhoni-shushanth.jpg')
+image_to_detect=cv2.imread('images/dhoni-shushanth.jpg')
 
 all_face_locations=face_recognition.face_locations(image_to_detect,model='hog')
 print('there are {} no of faces in this image'.format(len(all_face_locations)))
